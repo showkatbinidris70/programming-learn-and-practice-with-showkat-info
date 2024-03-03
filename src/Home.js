@@ -40,6 +40,10 @@ export default function Home() {
           {" "}
           <Link to="/use-callback">Use Callback</Link>
         </div>
+        <div>
+          {" "}
+          <Link to="/use-context">Use Context</Link>
+        </div>
       </div>
     </div>
   );

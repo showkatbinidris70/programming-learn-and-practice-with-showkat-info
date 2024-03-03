@@ -9,6 +9,7 @@ import UseRef from "./components/UseRef";
 import UseReducer from "./components/UseReducer";
 import UseMemo from "./components/UseMemo";
 import UseCallback from "./components/UseCallback";
+import Component2 from "./components/Component2";
 
 function App() {
   return (
@@ -24,6 +25,8 @@ function App() {
             <Route path="use-reducer" element={<UseReducer />} />
             <Route path="use-memo" element={<UseMemo />} />
             <Route path="use-callback" element={<UseCallback />} />
+            <Route path="use-context" element={<Component2 />} />
+
           </Route>
         </Routes>
       </BrowserRouter>

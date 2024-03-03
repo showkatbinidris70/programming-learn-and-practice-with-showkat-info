@@ -26,6 +26,9 @@ export default function Layout() {
           <li>
             <Link to="/use-callback">Use Callback</Link>
           </li>
+          <li>
+            <Link to="/use-context">Use Context</Link>
+          </li>
         </ul>
       </nav>
 
