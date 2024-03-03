@@ -7,6 +7,8 @@ import UseEffect from "./components/UseEffect";
 import UseState from "./components/UseState";
 import UseRef from "./components/UseRef";
 import UseReducer from "./components/UseReducer";
+import UseMemo from "./components/UseMemo";
+import UseCallback from "./components/UseCallback";
 
 function App() {
   return (
@@ -20,7 +22,8 @@ function App() {
             <Route path="use-ref" element={<UseRef />} />
             <Route path="use-ref" element={<UseRef />} />
             <Route path="use-reducer" element={<UseReducer />} />
-
+            <Route path="use-memo" element={<UseMemo />} />
+            <Route path="use-callback" element={<UseCallback />} />
           </Route>
         </Routes>
       </BrowserRouter>

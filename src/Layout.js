@@ -20,6 +20,12 @@ export default function Layout() {
           <li>
             <Link to="/use-reducer">Use Reducer</Link>
           </li>
+          <li>
+            <Link to="/use-memo">Use Memo</Link>
+          </li>
+          <li>
+            <Link to="/use-callback">Use Callback</Link>
+          </li>
         </ul>
       </nav>
 

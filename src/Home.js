@@ -32,6 +32,14 @@ export default function Home() {
           {" "}
           <Link to="/use-reducer">Use Reducer</Link>
         </div>
+        <div>
+          {" "}
+          <Link to="/use-memo">Use Memo</Link>
+        </div>
+        <div>
+          {" "}
+          <Link to="/use-callback">Use Callback</Link>
+        </div>
       </div>
     </div>
   );
