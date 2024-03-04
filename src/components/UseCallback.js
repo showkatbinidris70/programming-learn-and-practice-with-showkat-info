@@ -83,6 +83,9 @@ export default function UseCallback() {
   `;
   return (
     <div>
+    <p className="fs-5"><span className="text-bold">Use Callback : </span>useCallback ও useMemo এর মতো Unnecessary code যেন render না হয় তার জন্য ব্যবহার করা হয় । useCallback মূলত use হয় state এর value যদি change না হয় তাহলে Callback function ও যেন 
+    define না হয়।
+    </p>
       {toggle ? "On" : "False"}
       <button
         className="btn btn-primary ms-3"
