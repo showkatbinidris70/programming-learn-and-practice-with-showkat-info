@@ -12,6 +12,12 @@ export default function Component2() {
             <p>useContext এর মাধ্যমে কোন একটা state কে globally declare করতে পারি</p>
             <h3>{user.id}</h3>
             <h3>{user.name}</h3>
+            <h3>{user.name}</h3>
+            <h3>{user.name}</h3>
+            <h3>{user.name}</h3>
+            <h3>{user.name}</h3>
+            <h3>{user.name}</h3>
+
         </div>
     );
 }

@@ -10,6 +10,10 @@ import UseReducer from "./components/UseReducer";
 import UseMemo from "./components/UseMemo";
 import UseCallback from "./components/UseCallback";
 import Component2 from "./components/Component2";
+import UseParams from "./components/UseParams";
+import Blog from "./components/Blog";
+import UseLocation from "./components/UseLocation";
+import Blog2 from "./components/Blog2";
 
 function App() {
   return (
@@ -26,7 +30,10 @@ function App() {
             <Route path="use-memo" element={<UseMemo />} />
             <Route path="use-callback" element={<UseCallback />} />
             <Route path="use-context" element={<Component2 />} />
-
+            <Route path="use-params" element={<UseParams />} />
+            <Route path="use-params/:title" element={<Blog />} />
+            <Route path="use-location/:title" element={<Blog2 />} />
+            <Route path="use-location" element={<UseLocation />} />
           </Route>
         </Routes>
       </BrowserRouter>
