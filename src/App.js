@@ -9,6 +9,8 @@ import UseRef from "./components/UseRef";
 import UseReducer from "./components/UseReducer";
 import UseMemo from "./components/UseMemo";
 import UseCallback from "./components/UseCallback";
+import Component3 from "./components/Component3";
+import Component1 from "./components/Component1";
 import Component2 from "./components/Component2";
 import UseParams from "./components/UseParams";
 import Blog from "./components/Blog";

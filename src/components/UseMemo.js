@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Message from "./Message";
 import Markdown from "react-markdown";
+import Component2 from "./Component2";
 
 export default function UseMemo() {
   const [num, setNum] = useState(0);
@@ -62,6 +63,8 @@ export default function UseMemo() {
         Increment
       </button>
       <Message initialValueOfMsg={num} />
+      <h2>llllll</h2>
+      {/* <Component2/> */}
     </div>
   );
 }
