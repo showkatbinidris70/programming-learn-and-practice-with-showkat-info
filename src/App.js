@@ -27,6 +27,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="use-state" element={<UseState />} />
             <Route path="use-effect" element={<UseEffect />} />
+            <Route path="custom-hook" element={<DataFetch />} />
             <Route path="use-ref" element={<UseRef />} />
             <Route path="use-ref" element={<UseRef />} />
             <Route path="use-reducer" element={<UseReducer />} />
@@ -37,7 +38,6 @@ function App() {
             <Route path="use-params/:title" element={<Blog />} />
             <Route path="use-location/:title" element={<Blog2 />} />
             <Route path="use-location" element={<UseLocation />} />
-            <Route path="custom-hook" element={<DataFetch />} />
           </Route>
         </Routes>
       </BrowserRouter>

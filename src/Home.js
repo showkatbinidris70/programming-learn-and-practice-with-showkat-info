@@ -1,9 +1,52 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import UseShowkat from "./components/customhooksTow.js/useShowkat";
+import FetchData from "./components/customhooksTow.js/FetchData";
+import UseMemoHook from "./components/UseMemoHook";
 
 export default function Home() {
+  const [count, setCount] = useState(0);
+  const [todos, setTodos] = useState(null);
+
+  const handleIncrement = () => {
+    setCount(count + 1);
+  };
+  useEffect(() => {
+    fetch("https://jsonplaceholder.typicode.com/todos?_limit=2")
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        setTodos(data);
+      });
+  }, []);
+
+  const todosElement =
+    todos &&
+    todos.map((todo) => {
+      return <p key={todo.id}>{todo.title}</p>;
+    });
+
   return (
     <div>
+      <div className="d-none">
+        {/* use Memo */}
+        {/* <UseMemoHook /> */}
+        {/* use state */}
+        <div>
+          <h3>Initial Value : {count}</h3>
+          <button
+            onClick={() => {
+              setCount(count + 1);
+            }}
+          >
+            increment
+          </button>
+        </div>
+        {/* use effect */}
+        {todosElement}
+        {/* custom hooks */}
+        <FetchData />
+      </div>
       <div>
         <p className="fs-5">
           প্রত্যেকটি hooks এরই কিন্তু নিজস্ব Unique API রয়েছে। কিছু hooks
@@ -14,44 +57,6 @@ export default function Home() {
           এবং বাকিরা কিছুই রিটার্ন করে না{" "}
           <span className="text-primary">(যেমন useEffect)</span>।
         </p>
-      </div>
-      <div className="d-flex gap-5 d-none">
-        <div>
-          {" "}
-          <Link to="/use-state">Use State</Link>
-        </div>
-        <div>
-          {" "}
-          <Link to="/use-effect">Use Effect</Link>
-        </div>
-        <div>
-          {" "}
-          <Link to="/use-ref">Use Ref</Link>
-        </div>
-        <div>
-          {" "}
-          <Link to="/use-reducer">Use Reducer</Link>
-        </div>
-        <div>
-          {" "}
-          <Link to="/use-memo">Use Memo</Link>
-        </div>
-        <div>
-          {" "}
-          <Link to="/use-callback">Use Callback</Link>
-        </div>
-        <div>
-          {" "}
-          <Link to="/use-context">Use Context</Link>
-        </div>
-        <div>
-          {" "}
-          <Link to="/use-params">Blogs</Link>
-        </div>
-        <div>
-          {" "}
-          <Link to="/custom-hook">Custom Hook</Link>
-        </div>
       </div>
     </div>
   );

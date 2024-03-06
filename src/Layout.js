@@ -15,6 +15,9 @@ export default function Layout() {
             <Link to="/use-effect">Use Effect</Link>
           </li>
           <li>
+            <Link to="/custom-hook">Custom Hooks</Link>
+          </li>
+          <li>
             <Link to="/use-ref">Use Ref</Link>
           </li>
           <li>
@@ -34,9 +37,6 @@ export default function Layout() {
           </li>
           <li>
             <Link to="/use-location">useLocation</Link>
-          </li>
-          <li>
-            <Link to="/custom-hook">Custom Hooks</Link>
           </li>
         </ul>
       </nav>
