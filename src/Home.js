@@ -44,6 +44,14 @@ export default function Home() {
           {" "}
           <Link to="/use-context">Use Context</Link>
         </div>
+        <div>
+          {" "}
+          <Link to="/use-params">Blogs</Link>
+        </div>
+        <div>
+          {" "}
+          <Link to="/custom-hook">Custom Hook</Link>
+        </div>
       </div>
     </div>
   );

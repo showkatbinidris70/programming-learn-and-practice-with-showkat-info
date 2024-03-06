@@ -12,6 +12,11 @@ import UseCallback from "./components/UseCallback";
 import Component3 from "./components/Component3";
 import Component1 from "./components/Component1";
 import Component2 from "./components/Component2";
+import UseParams from "./components/UseParams";
+import Blog from "./components/Blog";
+import UseLocation from "./components/UseLocation";
+import Blog2 from "./components/Blog2";
+import DataFetch from "./components/customhooks/DataFetch";
 
 function App() {
   return (
@@ -28,6 +33,11 @@ function App() {
             <Route path="use-memo" element={<UseMemo />} />
             <Route path="use-callback" element={<UseCallback />} />
             <Route path="use-context" element={<Component2 />} />
+            <Route path="use-params" element={<UseParams />} />
+            <Route path="use-params/:title" element={<Blog />} />
+            <Route path="use-location/:title" element={<Blog2 />} />
+            <Route path="use-location" element={<UseLocation />} />
+            <Route path="custom-hook" element={<DataFetch />} />
           </Route>
         </Routes>
       </BrowserRouter>

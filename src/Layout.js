@@ -29,6 +29,15 @@ export default function Layout() {
           <li>
             <Link to="/use-context">Use Context</Link>
           </li>
+          <li>
+            <Link to="/use-params">Blogs/UseParams</Link>
+          </li>
+          <li>
+            <Link to="/use-location">useLocation</Link>
+          </li>
+          <li>
+            <Link to="/custom-hook">Custom Hooks</Link>
+          </li>
         </ul>
       </nav>
 

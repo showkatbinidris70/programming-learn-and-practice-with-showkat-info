@@ -64,7 +64,7 @@ export default function UseMemo() {
       </button>
       <Message initialValueOfMsg={num} />
       <h2>llllll</h2>
-      <Component2/>
+      {/* <Component2/> */}
     </div>
   );
 }
